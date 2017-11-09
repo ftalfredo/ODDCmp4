@@ -1,0 +1,64 @@
+head	1.2;
+access;
+symbols;
+locks
+	jalfredo:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2017.11.07.22.02.51;	author jalfredo;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.11.01.21.05.29;	author jalfredo;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@@+id/fvalid"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:id="@@+id/fsize"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:id="@@+id/fname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d10 1
+a10 1
+        android:layout_width="50dp"
+@

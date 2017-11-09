@@ -1,0 +1,600 @@
+head	1.23;
+access;
+symbols;
+locks
+	jalfredo:1.23; strict;
+comment	@# @;
+
+
+1.23
+date	2017.11.07.22.02.51;	author jalfredo;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.07.21.39.31;	author jalfredo;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.07.00.13.03;	author jalfredo;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.07.00.04.56;	author jalfredo;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.06.23.54.02;	author jalfredo;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.06.23.08.39;	author jalfredo;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.06.18.55.39;	author jalfredo;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.11.03.23.51.07;	author jalfredo;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.11.03.17.18.17;	author jalfredo;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.11.03.16.36.52;	author jalfredo;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.11.02.23.32.08;	author jalfredo;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.11.02.21.55.58;	author jalfredo;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.11.02.20.46.30;	author jalfredo;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.11.02.17.20.42;	author jalfredo;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.11.02.16.31.00;	author jalfredo;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.11.01.23.50.51;	author jalfredo;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.10.31.22.04.32;	author jalfredo;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.10.31.21.40.31;	author jalfredo;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.10.26.23.52.36;	author jalfredo;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.10.26.23.03.52;	author jalfredo;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.26.22.40.50;	author jalfredo;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.25.21.32.43;	author jalfredo;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.25.18.35.52;	author jalfredo;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oddc.oddcmp4.MainActivity">
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@@+id/fStat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="14sp"
+            android:background="#ffd9ddf2"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@@+id/sview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ff6877ca" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <ProgressBar
+                android:id="@@+id/pBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+            <ViewSwitcher
+                android:id="@@+id/switcher"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+                <ListView
+                    android:id="@@+id/fslistView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <VideoView
+                    android:id="@@+id/videoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+            </ViewSwitcher>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@@+id/errMsg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#ffffffff"
+                android:background="#ff6877ca"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@@+id/btnSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:onClick="onSwitch"
+                android:background="#ffd9ddf2"
+                android:text="BACK" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d26 5
+a30 5
+            <android.support.v7.widget.SearchView
+                android:id="@@+id/sview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ff6877ca" />
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d56 1
+a56 1
+                    android:layout_height="wrap_content" />
+d61 4
+a64 3
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+d68 1
+a68 1
+                android:layout_height="match_parent"
+d78 1
+a78 1
+                android:layout_height="match_parent"
+d83 1
+a83 1
+        </FrameLayout>
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d80 1
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@a29 1
+                android:textColor="#ffffffff"
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d23 1
+d29 3
+a31 4
+                android:layout_height="40dp" />
+
+
+
+d71 2
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+            android:layout_height="50dp"
+d25 8
+d64 1
+a64 1
+            android:layout_height="50dp">
+d76 1
+a76 1
+                android:layout_height="wrap_content"
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+    tools:context="com.example.jalfredo.videomp4.MainActivity">
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d49 1
+a49 1
+                    android:layout_height="match_parent" />
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d35 1
+a35 1
+                android:visibility="gone" />
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d35 1
+a35 1
+                android:visibility="visible" />
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d28 8
+d51 1
+a51 8
+            <ProgressBar
+                android:id="@@+id/pBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+            android:textSize="24sp"
+d50 1
+a50 1
+                android:visibility="gone" />
+d61 1
+a61 1
+                android:textSize="24sp"
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+        android:layout_height="wrap_content"
+d25 1
+a25 5
+<FrameLayout
+android:layout_width="match_parent"
+    android:layout_height="600dp">
+        <ViewSwitcher
+            android:id="@@+id/switcher"
+d27 3
+a29 5
+            android:layout_height="600dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+            <ListView
+                android:id="@@+id/fslistView"
+d31 21
+a51 8
+                android:layout_height="match_parent" />
+            <VideoView
+                android:id="@@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ViewSwitcher>
+</FrameLayout>
+
+d53 1
+a53 2
+        <TextView
+            android:id="@@+id/errMsg"
+d55 8
+a62 4
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"
+            android:visibility="visible" />
+d64 8
+a71 6
+        <Button
+            android:id="@@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSwitch"
+            android:text="BACK" />
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d25 3
+a33 1
+
+a37 1
+
+d42 3
+a45 1
+        </ViewSwitcher>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d9 2
+a10 3
+
+    <LinearLayout
+        android:layout_width="match_parent"
+d16 8
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d9 1
+d11 1
+a11 1
+        android:layout_width="0dp"
+d20 2
+a21 2
+            android:layout_width="759dp"
+            android:layout_height="700dp"
+d28 1
+a28 2
+                android:layout_height="match_parent">
+            </ListView>
+a51 1
+
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d36 8
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d17 6
+a22 6
+    <ViewSwitcher
+        android:id="@@+id/switcher"
+        android:layout_width="759dp"
+        android:layout_height="700dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+d24 5
+a28 4
+        <ListView
+            android:id="@@+id/fslistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+d30 4
+a33 4
+        <VideoView
+            android:id="@@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+d35 1
+a35 1
+    </ViewSwitcher>
+a41 2
+
+
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d40 1
+a40 1
+            android:text="SWITCH" />
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d9 8
+d20 1
+a20 1
+        android:layout_height="880dp"
+d22 2
+a23 2
+        tools:layout_editor_absoluteY="8dp" >
+        
+d27 2
+a28 2
+            android:layout_height="match_parent">
+        </ListView>
+d35 10
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d9 18
+a26 8
+    <VideoView
+        android:id="@@+id/videoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d10 1
+@

@@ -1,0 +1,2111 @@
+head	1.52;
+access;
+symbols;
+locks
+	jalfredo:1.52; strict;
+comment	@# @;
+
+
+1.52
+date	2017.11.08.23.35.08;	author jalfredo;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2017.11.08.01.20.11;	author jalfredo;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2017.11.07.23.53.57;	author jalfredo;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2017.11.07.23.25.38;	author jalfredo;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2017.11.07.22.36.54;	author jalfredo;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2017.11.07.22.02.51;	author jalfredo;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2017.11.07.21.39.31;	author jalfredo;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2017.11.07.19.54.05;	author jalfredo;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2017.11.07.19.26.42;	author jalfredo;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2017.11.07.00.09.40;	author jalfredo;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2017.11.07.00.04.56;	author jalfredo;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2017.11.06.23.54.02;	author jalfredo;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2017.11.06.23.08.39;	author jalfredo;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2017.11.06.22.30.14;	author jalfredo;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2017.11.06.19.29.40;	author jalfredo;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2017.11.06.18.55.39;	author jalfredo;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2017.11.03.22.38.34;	author jalfredo;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2017.11.03.21.45.16;	author jalfredo;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2017.11.03.21.11.49;	author jalfredo;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2017.11.03.18.45.29;	author jalfredo;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2017.11.03.18.40.54;	author jalfredo;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2017.11.03.17.55.10;	author jalfredo;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2017.11.03.17.23.23;	author jalfredo;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2017.11.03.17.18.17;	author jalfredo;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2017.11.03.17.07.49;	author jalfredo;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2017.11.03.16.36.52;	author jalfredo;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2017.11.02.23.32.08;	author jalfredo;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2017.11.02.21.55.58;	author jalfredo;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.11.02.20.46.30;	author jalfredo;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2017.11.02.17.20.42;	author jalfredo;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2017.11.02.16.31.00;	author jalfredo;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2017.11.01.23.50.51;	author jalfredo;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2017.11.01.21.18.09;	author jalfredo;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2017.11.01.21.05.44;	author jalfredo;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2017.11.01.20.56.02;	author jalfredo;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2017.11.01.18.26.53;	author jalfredo;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2017.10.31.23.19.07;	author jalfredo;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2017.10.31.23.16.16;	author jalfredo;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2017.10.31.22.04.32;	author jalfredo;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2017.10.31.21.40.31;	author jalfredo;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2017.10.31.21.10.08;	author jalfredo;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2017.10.31.18.17.05;	author jalfredo;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2017.10.31.18.11.21;	author jalfredo;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2017.10.31.17.18.04;	author jalfredo;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2017.10.31.17.08.23;	author jalfredo;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2017.10.26.23.52.36;	author jalfredo;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.10.26.23.39.20;	author jalfredo;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.10.26.23.03.52;	author jalfredo;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2017.10.26.22.49.20;	author jalfredo;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2017.10.26.22.40.50;	author jalfredo;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2017.10.25.21.32.43;	author jalfredo;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.10.25.18.35.21;	author jalfredo;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@package com.oddc.oddcmp4;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.Manifest;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
+import android.os.Bundle;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.LayoutInflater;
+import android.view.inputmethod.InputMethodManager;
+
+import android.text.Html;
+
+import android.widget.ProgressBar;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.VideoView;
+import android.widget.TextView;
+import android.widget.MediaController;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ArrayAdapter;
+import android.widget.AdapterView.OnItemClickListener;
+
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnErrorListener;
+import android.media.MediaMetadataRetriever;
+
+import android.graphics.Color;
+import android.graphics.Typeface;
+
+import android.net.Uri;
+import android.util.Log;
+import android.widget.ViewSwitcher;
+
+import android.os.AsyncTask;
+import java.util.ArrayList;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Comparator;
+import java.util.Locale;
+
+public class MainActivity extends AppCompatActivity {
+    File md;
+    View fview;
+    View vview;
+    SearchView sview;
+    ListView fsview;
+    ViewSwitcher vs;
+    String curVideo = null;
+    VideoView mVideoView;
+    Button btnSwitch;
+    TextView errMsg;
+    TextView fStat;
+    ProgressBar pBar;
+    int tMP4 = 0;
+    int tValid = 0;
+    int tNull = 0;
+    int tZero = 0;
+    final int REQ_READ_EXT_STORAGE = 1001;
+    boolean reqGranted = false;
+    ArrayList<FileListData> vidFiles;
+
+    InputMethodManager inputManager;
+
+    public static Context mContext;
+
+    @@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Log.d("SEQUENCE","MainActivity.onCreate BoM");
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mContext = getApplicationContext();
+        inputManager = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setTitle("ODDC");
+        ab.setSubtitle("MP4 validation tool");
+
+        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQ_READ_EXT_STORAGE);
+        }
+        else reqGranted = true;
+
+        fsview = (ListView) findViewById(R.id.fslistView);
+
+        sview = (SearchView) findViewById(R.id.sview);
+        sview.setQueryHint("Search for mp4");
+        sview.setIconified(false);
+        EditText searchEditText = (EditText) sview.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        searchEditText.setTextColor(Color.WHITE);
+        searchEditText.setHintTextColor(Color.LTGRAY);
+
+        sview.setOnQueryTextListener(new OnQueryListener());
+
+        btnSwitch = (Button)findViewById(R.id.btnSwitch);
+        btnSwitch.setVisibility(View.INVISIBLE);
+
+        errMsg = (TextView)findViewById(R.id.errMsg);
+        fStat = (TextView)findViewById(R.id.fStat);
+        pBar = (ProgressBar)findViewById(R.id.pBar);
+
+        fview = findViewById(R.id.fslistView);
+        vview = findViewById(R.id.videoview);
+        vs = (ViewSwitcher)findViewById(R.id.switcher);
+
+        md = new File("/sdcard/oddc");
+
+        mVideoView = (VideoView) findViewById(R.id.videoview);
+        MediaController mc = new MediaController(this);
+        mc.setAnchorView(mVideoView);
+        mc.setPadding(0,0,0,0);
+        mVideoView.setMediaController(mc);
+
+        if (reqGranted) new ListFilesTask().execute();
+
+        Log.d("SEQUENCE","MainActivity.onCreate EoM");
+    }
+
+    @@Override
+    protected void onResume() {
+    Log.i("SEQUENCE", "MainActivity.onResume BoM");
+    super.onResume();
+    if (! reqGranted){
+        sview.clearFocus();
+    }
+    Log.i("SEQUENCE", "MainActivity.onResume EoM");
+}
+
+    @@Override
+    protected void onStart() {
+        Log.i("SEQUENCE", "MainActivity.onStart BoM");
+        super.onStart();
+        Log.i("SEQUENCE", "MainActivity.onStart EoM");
+    }
+
+    @@Override
+    protected void onStop() {
+        Log.i("SEQUENCE", "MainActivity onStop BoM");
+        super.onStop();
+        Log.i("SEQUENCE", "MainActivity onStop EoM");
+    }
+
+
+
+    class OnQueryListener implements SearchView.OnQueryTextListener {
+        public boolean onQueryTextChange (String newText){
+            if (vidFiles != null) {
+                for (int i = 0; i < vidFiles.size(); i++) {
+                    FileListData sVal = vidFiles.get(i);
+                    if (sVal.fname.startsWith(newText)) {
+                        fsview.setSelection(i);
+                        errMsg.setText(" ");
+                        return true;
+                    }
+                }
+            }
+            errMsg.setText(newText + " not found");
+            inputManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+
+            return true;
+        }
+        public boolean onQueryTextSubmit (String query){ return true; }
+    }
+
+    @@Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case REQ_READ_EXT_STORAGE: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d("VIDEOMP4","REQ_READ_EXT_STORAGE PERMISSION_GRANTED");
+                    reqGranted = true;
+                    new ListFilesTask().execute();
+                } else {
+                    Log.d("VIDEOMP4","REQ_READ_EXT_STORAGE PERMISSION_DENIED");
+                    reqGranted = false;
+                    pBar.setVisibility(View.GONE);
+                    inputManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+                    errMsg.setText("PERMISSION needed to read oddc directory");
+                }
+                return;
+            }
+        }
+    }
+
+    private void loadViewList(){
+        FileListAdapter adapter = new FileListAdapter(this, vidFiles);
+        fsview.setAdapter(adapter);
+        fsview.setOnItemClickListener(new OnItemClickListener(){
+            @@Override
+            public void onItemClick(AdapterView<?> adapter, View v, int pos, long arg3)
+            {
+                errMsg.setText("");
+                curVideo = vidFiles.get(pos).fpath;
+                int curVideoSZ = (int)vidFiles.get(pos).fsize;
+                Log.d("VIDEOMP4","loadViewList CLICK "+String.valueOf(pos)+" "+curVideo);
+                File f = new File(curVideo);
+
+                if (! f.exists()){
+                    Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
+                    errMsg.setText("MediaPlayer: "+curVideo+" not found");
+                    return;
+                }
+                if (! f.isFile()){
+                    Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
+                    errMsg.setText("MediaPlayer: "+curVideo+" not file");
+                    return;
+                }
+                if (! f.canRead()){
+                    Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
+                    errMsg.setText("MediaPlayer: cannot read "+curVideo);
+                    return;
+                }
+                if (f.length() == 0){
+                    Log.d("VIDEOMP4",f.toString()+ " Zero length");
+                    errMsg.setText("MediaPlayer: zero length "+curVideo);
+                    return;
+                }
+                if (vidFiles.get(pos).fvalid.compareTo("NotValid") == 0){
+                    errMsg.setText("MediaPlayer: NotValid mp4 "+ curVideo);
+                }
+                if (vidFiles.get(pos).fvalid.compareTo("Valid") != 0) return;
+
+                Uri uri = Uri.fromFile(f);
+                btnSwitch.setVisibility(View.VISIBLE);
+                vs.showNext();
+                try {
+                    mVideoView.setOnErrorListener(mOnErrorListener);
+                    mVideoView.setVideoURI(uri);
+                    errMsg.setText(String.valueOf(curVideoSZ) + "  " + curVideo);
+                    mVideoView.start();
+                }
+                catch (Exception e){
+                    Log.e("VIDEOMP4","ERROR: unable to play "+curVideo);
+                    errMsg.setText("MediaPlayer: unable to play "+curVideo);
+                }
+            }
+        });
+    }
+
+
+    private class ListFilesTask extends AsyncTask<Void,Integer,Integer> {
+        @@Override
+        protected Integer doInBackground(Void... params) {
+            int fProg = 0;
+            File[] vFiles = md.listFiles(new FileFilter() {
+                public boolean accept(File fname) {
+                    return fname.getPath().endsWith(".mp4");
+                }
+            });
+            if (vFiles != null) {
+                tMP4 = vFiles.length;
+                String hasVideo = "NA";
+                MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+                vidFiles = new ArrayList<FileListData>();
+                for (File f : vFiles) {
+                    fProg++;
+                    publishProgress(fProg);
+                    FileListData fd = new FileListData();
+                    fd.fpath = f.getPath();
+                    fd.fname = f.getName();
+                    fd.fsize = f.length();
+                    if (fd.fsize > 0) {
+                        try {
+                            retriever.setDataSource(fd.fpath);
+                            hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
+                            if (hasVideo == null){
+                                hasVideo = "NotValid";
+                                tNull++;
+                            }
+                            else {
+                                if (hasVideo.compareTo("yes") == 0){
+                                    hasVideo = "Valid";
+                                    tValid++;
+                                }
+                            }
+                        }
+                        catch(Exception e){
+                            Log.d("VIDEOMP4","listVideoFiles ERROR "+e.getMessage());
+                        }
+                    }
+                    else {
+                        hasVideo = "zero";
+                        tZero++;
+                    }
+                    fd.fvalid = hasVideo;
+                    vidFiles.add(fd);
+                }
+                vidFiles.sort(new FileListComparator());
+            }
+            return new Integer(tMP4);
+        }
+
+        @@Override
+        protected void onProgressUpdate(Integer... p) {
+            fStat.setText("Reading "+p[0].toString()+" mp4 files");
+        }
+
+        @@Override
+        protected void onPostExecute(Integer i) {
+            pBar.setVisibility(View.GONE);
+            String sMP4 = "Total mp4:";
+            String sOK  = "Total  Valid:";
+            String sNull = "Total NotValid:";
+            String sZero = "Total zero:";
+            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$16s %4$5d \n%5$13s %6$5d %7$16s %8$5d",sMP4,tMP4,sNull,tNull,sOK, tValid,sZero,tZero);
+            fStat.setTypeface(Typeface.MONOSPACE);
+            fStat.setText(sStatus);
+            loadViewList();
+        }
+    }
+
+    private class FileListComparator implements Comparator<FileListData>{
+        @@Override
+        public int compare(FileListData fld1, FileListData fld2) {
+            int a1 = (int) ( fld1.fvalid.charAt(0) | 0x20 );
+            int a2 = (int) ( fld2.fvalid.charAt(0) | 0x20 );
+            int a12 = (a1 << 8) | a2;
+            switch (a12) {
+                case 0x6e76:
+                case 0x7a6e:
+                case 0x7a76:
+                    return -1;
+                case 0x6e6e:
+                case 0x7676:
+                case 0x7a7a:
+                    return 0;
+                case 0x6e7a:
+                case 0x766e:
+                case 0x767a:
+                    return 1;
+                default: return 0;
+            }
+        }
+    }
+
+    private class FileListData {
+        public long fsize;
+        public String fpath;
+        public String fname;
+        public String fvalid;
+    }
+
+    private class FileListAdapter extends ArrayAdapter<FileListData>
+    {
+        public FileListAdapter(Context context, ArrayList<FileListData> flist) {
+            super(context, 0, flist);
+        }
+        @@Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            String errStr;
+            FileListData flist = getItem(position);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.fslistview_layout, parent, false);
+            }
+            TextView fvalid = (TextView) convertView.findViewById(R.id.fvalid);
+            if (flist.fvalid.compareTo("Valid") != 0) errStr = "<font color='#FF0000'>"+flist.fvalid+"</font>";
+            else                                      errStr = "<font color='#000000'>"+flist.fvalid+"</font>";
+            fvalid.setText(Html.fromHtml(errStr,0));
+
+            TextView fsize = (TextView) convertView.findViewById(R.id.fsize); fsize.setText(Integer.toString((int)flist.fsize));
+            TextView fname = (TextView) convertView.findViewById(R.id.fname); fname.setText(flist.fname);
+
+            if(position % 2 ==1) convertView.setBackgroundColor(Color.rgb(0xd9, 0xdd, 0xf2));
+            else                 convertView.setBackgroundColor(Color.rgb(0xec, 0xee, 0xf8));
+
+            return convertView;
+        }
+    }
+
+
+    private OnErrorListener mOnErrorListener = new OnErrorListener() {
+        @@Override
+        public boolean onError(MediaPlayer mp, int what, int extra) {
+            Log.d("VIDEOMP4","MediaPlayer ERROR for "+curVideo);
+            errMsg.setText("MediaPlayer ERROR for "+curVideo);
+            return true;
+        }
+    };
+
+    public void onSwitch(View view){
+        if (vs.getCurrentView() == fview) return; //vs.showNext();
+        btnSwitch.setVisibility(View.INVISIBLE);
+        errMsg.setText("");
+        vs.showPrevious();
+    }
+}
+@
+
+
+1.51
+log
+@OnQueryListener crashing on vidFiles=null
+@
+text
+@d11 1
+a11 1
+import android.widget.ProgressBar;
+d19 1
+a26 1
+
+a28 1
+//import android.widget.SearchView.OnQueryTextListener;
+d67 1
+a67 1
+    boolean reqGranted = true;
+d70 2
+d80 3
+a86 2
+        mContext = getApplicationContext();
+
+d124 1
+a124 1
+        Log.d("SEQUENCE","MainActivity.onCreate BoM");
+d126 2
+a127 1
+@@Override
+d131 3
+d137 1
+a137 1
+@@Override
+a154 1
+            boolean sFound = false;
+a165 1
+            InputMethodManager inputManager = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+d180 1
+d184 3
+a322 1
+            //Log.d("VIDEOMP4","FileListComparator "+fld1.fvalid+" "+fld2.fvalid);
+@
+
+
+1.50
+log
+@dismissing keyboard works
+clearing errMsg with valid search text
+@
+text
+@d75 1
+a79 1
+        if (ab == null) Log.e("VIDEOMP4","onCreate ActionBar is NULLLLLLLLLLLLLLLLLLLLLLLLLL");
+d121 22
+d145 2
+d150 8
+a157 6
+            for (int i = 0; i < vidFiles.size(); i++){
+                FileListData sVal = vidFiles.get(i);
+                if (sVal.fname.startsWith(newText)){
+                    fsview.setSelection(i);
+                    errMsg.setText(" ");
+                    return true;
+d315 1
+a315 1
+            Log.d("VIDEOMP4","FileListComparator "+fld1.fvalid+" "+fld2.fvalid);
+@
+
+
+1.49
+log
+@search working
+need to dismiss keyboard to show errMsg(newText not found)
+@
+text
+@d15 1
+d29 1
+a29 1
+import android.widget.SearchView.OnQueryTextListener;
+a84 1
+
+a100 1
+
+a128 1
+                    //fsview.smoothScrollToPosition(i);
+d130 1
+d134 4
+a137 4
+            if (! sFound) errMsg.setText(newText + " not found");
+            return true;
+        }
+        public boolean onQueryTextSubmit (String query){
+d140 1
+a159 1
+        Log.d("VIDEOMP4","loadViewList BoM");
+a160 1
+        //ListView fsview = (ListView) findViewById(R.id.fslistView);
+d166 30
+a195 30
+            errMsg.setText("");
+            curVideo = vidFiles.get(pos).fpath;
+            int curVideoSZ = (int)vidFiles.get(pos).fsize;
+            Log.d("VIDEOMP4","loadViewList CLICK "+String.valueOf(pos)+" "+curVideo);
+            File f = new File(curVideo);
+
+            if (! f.exists()){
+                Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
+                errMsg.setText("MediaPlayer: "+curVideo+" not found");
+                return;
+            }
+            if (! f.isFile()){
+                Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
+                errMsg.setText("MediaPlayer: "+curVideo+" not file");
+                return;
+            }
+            if (! f.canRead()){
+                Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
+                errMsg.setText("MediaPlayer: cannot read "+curVideo);
+                return;
+            }
+            if (f.length() == 0){
+                Log.d("VIDEOMP4",f.toString()+ " Zero length");
+                errMsg.setText("MediaPlayer: zero length "+curVideo);
+                return;
+            }
+            if (vidFiles.get(pos).fvalid.compareTo("NotValid") == 0){
+                errMsg.setText("MediaPlayer: NotValid mp4 "+ curVideo);
+            }
+            if (vidFiles.get(pos).fvalid.compareTo("Valid") != 0) return;
+d197 13
+a209 13
+            Uri uri = Uri.fromFile(f);
+            btnSwitch.setVisibility(View.VISIBLE);
+            vs.showNext();
+            try {
+                mVideoView.setOnErrorListener(mOnErrorListener);
+                mVideoView.setVideoURI(uri);
+                errMsg.setText(String.valueOf(curVideoSZ) + "  " + curVideo);
+                mVideoView.start();
+            }
+            catch (Exception e){
+                Log.e("VIDEOMP4","ERROR: unable to play "+curVideo);
+                errMsg.setText("MediaPlayer: unable to play "+curVideo);
+            }
+a211 1
+        Log.d("VIDEOMP4","loadViewList EoM");
+a215 1
+
+a231 1
+                    //Log.d("VIDEOMP4","listVideoFiles checking "+String.valueOf(fProg)+" "+ f.toString());
+a292 3
+
+            //return 0;
+
+a309 1
+
+@
+
+
+1.48
+log
+@adding OnQueryListener
+@
+text
+@d54 1
+d90 2
+d126 10
+a135 1
+            errMsg.setText("onQueryTextChange "+newText);
+d162 1
+a162 1
+        ListView fsview = (ListView) findViewById(R.id.fslistView);
+d236 1
+a236 1
+                    Log.d("VIDEOMP4","listVideoFiles checking "+String.valueOf(fProg)+" "+ f.toString());
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d28 1
+d96 3
+d121 10
+a305 1
+
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d168 2
+a169 2
+            if (vidFiles.get(pos).fvalid.compareTo("InValid") == 0){
+                errMsg.setText("MediaPlayer: invalid mp4 "+ curVideo);
+d220 1
+a220 1
+                                hasVideo = "InValid";
+d256 1
+a256 1
+            String sNull = "Total InValid:";
+d276 2
+a277 2
+                case 0x6976:
+                case 0x7a69:
+d280 1
+a280 1
+                case 0x6969:
+d284 2
+a285 2
+                case 0x697a:
+                case 0x7669:
+d292 2
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d142 3
+a144 2
+            errMsg.setText("onItemClick");
+            curVideo = vidFiles.get(pos).fname;
+d168 1
+a168 1
+            if (vidFiles.get(pos).fvalid.compareTo("null") == 0){
+d179 1
+d212 2
+a213 1
+                    fd.fname = f.getPath();
+d217 1
+a217 1
+                            retriever.setDataSource(fd.fname);
+d295 1
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d61 1
+a61 1
+    int tOK = 0;
+d142 1
+a142 1
+            errMsg.setText("");
+d170 1
+a170 1
+            if (vidFiles.get(pos).fvalid.compareTo("OK") != 0) return;
+d197 1
+a197 1
+                    return fname.getName().endsWith(".mp4");
+d208 1
+a208 1
+                    //Log.d("VIDEOMP4","listVideoFiles checking "+ f.toString());
+d210 1
+a210 1
+                    fd.fname = f.getName();
+a211 1
+                    vidFiles.add(fd);
+d223 1
+a223 1
+                                    tOK++;
+d236 1
+d255 1
+a255 1
+            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$16s %4$5d \n%5$13s %6$5d %7$16s %8$5d",sMP4,tMP4,sNull,tNull,sOK,tOK,sZero,tZero);
+d270 1
+a270 1
+            return 0;
+d272 4
+a275 4
+            /*switch (a12) {
+                case 0x4956:
+                case 0x5a49:
+                case 0x5a56:
+d277 3
+a279 3
+                case 0x4949:
+                case 0x5656:
+                case 0x5a5a:
+d281 3
+a283 3
+                case 0x495a:
+                case 0x5649:
+                case 0x565a:
+d286 1
+a286 1
+            }*/
+d309 2
+a310 2
+            if (flist.fvalid.compareTo("OK") != 0) errStr = "<font color='#FF0000'>"+flist.fvalid+"</font>";
+            else                                  errStr = "<font color='#000000'>"+flist.fvalid+"</font>";
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d142 29
+a170 29
+                errMsg.setText("");
+                curVideo = vidFiles.get(pos).fname;
+                Log.d("VIDEOMP4","loadViewList CLICK "+String.valueOf(pos)+" "+curVideo);
+                File f = new File(curVideo);
+
+                if (! f.exists()){
+                    Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
+                    errMsg.setText("MediaPlayer: "+curVideo+" not found");
+                    return;
+                }
+                if (! f.isFile()){
+                    Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
+                    errMsg.setText("MediaPlayer: "+curVideo+" not file");
+                    return;
+                }
+                if (! f.canRead()){
+                    Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
+                    errMsg.setText("MediaPlayer: cannot read "+curVideo);
+                    return;
+                }
+                if (f.length() == 0){
+                    Log.d("VIDEOMP4",f.toString()+ " Zero length");
+                    errMsg.setText("MediaPlayer: zero length "+curVideo);
+                    return;
+                }
+                if (vidFiles.get(pos).fvalid.compareTo("null") == 0){
+                    errMsg.setText("MediaPlayer: invalid mp4 "+ curVideo);
+                }
+                if (vidFiles.get(pos).fvalid.compareTo("OK") != 0) return;
+d172 12
+a183 12
+                Uri uri = Uri.fromFile(f);
+                btnSwitch.setVisibility(View.VISIBLE);
+                vs.showNext();
+                try {
+                    mVideoView.setOnErrorListener(mOnErrorListener);
+                    mVideoView.setVideoURI(uri);
+                    mVideoView.start();
+                }
+                catch (Exception e){
+                    Log.e("VIDEOMP4","ERROR: unable to play "+curVideo);
+                    errMsg.setText("MediaPlayer: unable to play "+curVideo);
+                }
+d210 1
+a210 1
+                    fd.fname = f.getPath();
+d218 1
+a218 1
+                                hasVideo = "null";
+d223 1
+a223 1
+                                    hasVideo = "OK";
+d252 2
+a253 2
+            String sOK  = "Total  OK:";
+            String sNull = "Total null:";
+d255 1
+a255 1
+            String sStatus = String.format(Locale.US,"%1$10s %2$5d %3$18s %4$5d \n%5$10s %6$5d %7$18s %8$5d",sMP4,tMP4,sNull,tNull,sOK,tOK,sZero,tZero);
+d265 3
+a267 2
+            int a1 = (int) fld1.fvalid.charAt(0);
+            int a2 = (int) fld2.fvalid.charAt(0);
+d270 6
+a275 4
+            switch (a12) {
+                case 0x6e4f:
+                case 0x7a4f:
+                case 0x7a6e:
+d277 3
+a279 3
+                case 0x4f4f:
+                case 0x6e6e:
+                case 0x7a7a:
+d281 3
+a283 3
+                case 0x4f6e:
+                case 0x4f7a:
+                case 0x6e7a:
+d286 1
+a286 1
+            }
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d313 2
+a314 2
+            if(position % 2 ==1) convertView.setBackgroundColor(Color.rgb(198, 204, 235));
+            else                 convertView.setBackgroundColor(Color.rgb(236, 238, 248));
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d24 1
+d91 3
+d315 1
+a315 1
+            
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d64 1
+a64 1
+    boolean reqGranted = false;
+a82 1
+
+d122 1
+a128 4
+
+
+
+
+d309 3
+a311 4
+            if(position % 2 ==1) convertView.setBackgroundColor(Color.rgb(231, 249, 255));
+            else                 convertView.setBackgroundColor(Color.rgb(195, 240, 255));
+
+
+@
+
+
+1.39
+log
+@added REQ_READ_EXT_STORAGE permissions stuff
+@
+text
+@d7 1
+d9 1
+a9 1
+import android.support.v4.content.ContextCompat;
+d51 1
+d64 1
+d86 1
+d88 3
+a90 1
+
+d111 1
+a111 1
+        new ListFilesTask().execute();
+a117 1
+                // If request is cancelled, the result arrays are empty.
+a118 1
+
+d120 1
+a120 1
+
+a121 1
+
+a125 3
+
+            // other 'case' lines to check for other
+            // permissions this app might request
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d4 3
+a6 2
+
+import android.app.ActionBar;
+d8 1
+d61 1
+d78 8
+d107 26
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@a162 1
+            tMP4 = vFiles.length;
+d164 1
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+package com.example.jalfredo.videomp4;
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d90 2
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d5 1
+d67 5
+@
+
+
+1.33
+log
+@fStat number of files appears to be working
+@
+text
+@a81 3
+        // My Files > Internal storage > oddc   // S8
+        // root > sdcard > oddc                 // Nexus 9
+
+a85 1
+        //listVideoFiles();
+a144 2
+
+    /*<Void,Void,Integer> {  params, progress, result */
+d149 31
+a179 38
+            Log.d("VIDEOMP4","ListFilesTask.dooooooooooooooooooooooooooooooooooooooInBackground");
+            //listVideoFiles();
+
+                int fProg = 0;
+                Log.d("VIDEOMP4","listVideoFiles BoM");
+
+                File[] vFiles = md.listFiles(new FileFilter() {
+                    public boolean accept(File fname) {
+                        return fname.getName().endsWith(".mp4");
+                    }
+                });
+                tMP4 = vFiles.length;
+                if (vFiles != null) {
+
+                    String hasVideo = "NA";
+                    MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+                    vidFiles = new ArrayList<FileListData>();
+                    for (File f : vFiles) {
+                        fProg++;
+                        publishProgress(fProg);
+                        //Log.d("VIDEOMP4","listVideoFiles checking "+ f.toString());
+                        FileListData fd = new FileListData();
+                        fd.fname = f.getPath();
+                        fd.fsize = f.length();
+                        vidFiles.add(fd);
+                        if (fd.fsize > 0) {
+                            try {
+                                retriever.setDataSource(fd.fname);
+                                hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
+                                if (hasVideo == null){
+                                    hasVideo = "null";
+                                    tNull++;
+                                }
+                                else {
+                                    if (hasVideo.compareTo("yes") == 0){
+                                        hasVideo = "OK";
+                                        tOK++;
+                                    }
+a181 3
+                            catch(Exception e){
+                                Log.d("VIDEOMP4","listVideoFiles ERROR "+e.getMessage());
+                            }
+d183 2
+a184 3
+                        else {
+                            hasVideo = "zero";
+                            tZero++;
+a185 2
+                        fd.fvalid = hasVideo;
+                        //Log.d("VIDEOMP4","listVideoFiles hasVideo="+fd.fvalid+" "+ f.toString());
+d187 5
+a191 1
+                    vidFiles.sort(new FileListComparator());
+d193 3
+a195 5
+                Log.d("VIDEOMP4","listVideoFiles EoM");
+
+
+
+            return new Integer(1);
+d200 1
+a200 2
+            fStat.setText("Reading "+p[0].toString()+" files");
+            //Log.d("VIDEOMP4","onProgressUpdateeeeeeeeeeeeeeeeeeeeeeeeeeeeeee "+p[0]);
+a204 2
+            Log.d("VIDEOMP4","ListFilesTask.onPooooooooooooooooooooooooooooostExecute BoM");
+
+a213 61
+            Log.d("VIDEOMP4","ListFilesTask.onPooooooooooooooooooooooooooooostExecute EoM");
+        }
+    }
+
+
+    public void listVideoFiles(){
+        int fProg = 0;
+        Log.d("VIDEOMP4","listVideoFiles BoM");
+
+        File[] vFiles = md.listFiles(new FileFilter() {
+            public boolean accept(File fname) {
+                return fname.getName().endsWith(".mp4");
+            }
+        });
+        tMP4 = vFiles.length;
+        if (vFiles != null) {
+            fProg++;
+            String hasVideo = "NA";
+            MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+            vidFiles = new ArrayList<FileListData>();
+            for (File f : vFiles) {
+                //Log.d("VIDEOMP4","listVideoFiles checking "+ f.toString());
+                FileListData fd = new FileListData();
+                fd.fname = f.getPath();
+                fd.fsize = f.length();
+                vidFiles.add(fd);
+                if (fd.fsize > 0) {
+                    try {
+                        retriever.setDataSource(fd.fname);
+                        hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
+                        if (hasVideo == null){
+                            hasVideo = "null";
+                            tNull++;
+                        }
+                        else {
+                            if (hasVideo.compareTo("yes") == 0){
+                                hasVideo = "OK";
+                                tOK++;
+                            }
+                        }
+                    }
+                    catch(Exception e){
+                        Log.d("VIDEOMP4","listVideoFiles ERROR "+e.getMessage());
+                    }
+                }
+                else {
+                    hasVideo = "zero";
+                    tZero++;
+                }
+                fd.fvalid = hasVideo;
+                //Log.d("VIDEOMP4","listVideoFiles hasVideo="+fd.fvalid+" "+ f.toString());
+            }
+            /*String sMP4 = "Total mp4:";
+            String sOK  = "Total  OK:";
+            String sNull = "Total null:";
+            String sZero = "Total zero:";
+            String sStatus = String.format(Locale.US,"%1$10s %2$5d %3$18s %4$5d \n%5$10s %6$5d %7$18s %8$5d",sMP4,tMP4,sNull,tNull,sOK,tOK,sZero,tZero);
+            fStat.setTypeface(Typeface.MONOSPACE);
+            fStat.setText(sStatus);*/
+
+            vidFiles.sort(new FileListComparator());
+a214 2
+        Log.d("VIDEOMP4","listVideoFiles EoM");
+        //pBar.setVisibility(View.GONE);
+@
+
+
+1.32
+log
+@onPostExecute being called
+need to display value in fStat
+@
+text
+@d217 2
+a218 2
+            //fStat.setText(p[0]);
+            Log.d("VIDEOMP4","onProgressUpdateeeeeeeeeeeeeeeeeeeeeeeeeeeeeee "+p[0]);
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d151 1
+a151 1
+    private class ListFilesTask extends AsyncTask<Void,Void,Integer> {
+d156 56
+a211 1
+            listVideoFiles();
+d215 5
+a219 2
+        /*@@Override
+        protected void onProgressUpdate() { }*/
+d240 1
+d250 1
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@a182 1
+        //pBar.setVisibility(View.VISIBLE);
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d168 1
+a168 1
+            /*String sMP4 = "Total mp4:";
+d175 1
+a175 1
+            loadViewList();*/
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d156 1
+a156 1
+            //listVideoFiles();
+d167 2
+a168 2
+            /*pBar.setVisibility(View.GONE);
+            String sMP4 = "Total mp4:";
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d148 10
+a157 5
+    private class ListFilesTask extends AsyncTask<Void,Void,Integer> { /* params, progress, result */
+        protected int doInBackground(Object... args) {
+            Log.d("VIDEOMP4","ListFilesTask.doInBackground");
+            listVideoFiles();
+            return 1;
+d160 6
+a165 1
+        protected void onProgressUpdate() { }
+d167 1
+a167 3
+        protected void onPostExecute(Integer n) {
+            Log.d("VIDEOMP4","ListFilesTask.onPostExecute BoM");
+            pBar.setVisibility(View.GONE);
+d175 2
+a176 2
+            loadViewList();
+            Log.d("VIDEOMP4","ListFilesTask.onPostExecute EoM");
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d58 1
+d92 38
+d131 20
+a150 2
+    private class ListFilesTask extends AsyncTask { /* params, progress, result */
+        protected Object doInBackground(Object... args) {
+d152 1
+a152 1
+            return null;
+d155 1
+a155 5
+        protected void onProgressUpdate() {
+
+        }
+
+        protected void onPostExecute() {
+d157 12
+d174 2
+a175 1
+        pBar.setVisibility(View.VISIBLE);
+d186 1
+a186 1
+            final ArrayList<FileListData> vidFiles = new ArrayList<FileListData>();
+d188 1
+a188 1
+                Log.d("VIDEOMP4","onViewFS checking "+ f.toString());
+d217 1
+a217 1
+                Log.d("VIDEOMP4","onViewFS hasVideo="+fd.fvalid+" "+ f.toString());
+d219 1
+a219 1
+            String sMP4 = "Total mp4:";
+d225 1
+a225 2
+            fStat.setText(sStatus);
+            //fStat.setText("total="+tMP4+" tOK="+tOK+" tNull="+tNull+" tZero="+tZero);
+a227 51
+            FileListAdapter adapter = new FileListAdapter(this, vidFiles);
+            ListView fsview = (ListView) findViewById(R.id.fslistView);
+            fsview.setAdapter(adapter);
+            fsview.setOnItemClickListener(new OnItemClickListener(){
+                @@Override
+                public void onItemClick(AdapterView<?> adapter, View v, int pos, long arg3)
+                {
+                    errMsg.setText("");
+                    curVideo = vidFiles.get(pos).fname;
+                    Log.d("VIDEOMP4","ListView CLICK "+String.valueOf(pos)+" "+curVideo);
+                    File f = new File(curVideo);
+
+                    if (! f.exists()){
+                        Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
+                        errMsg.setText("MediaPlayer: "+curVideo+" not found");
+                        return;
+                    }
+                    if (! f.isFile()){
+                        Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
+                        errMsg.setText("MediaPlayer: "+curVideo+" not file");
+                        return;
+                    }
+                    if (! f.canRead()){
+                        Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
+                        errMsg.setText("MediaPlayer: cannot read "+curVideo);
+                        return;
+                    }
+                    if (f.length() == 0){
+                        Log.d("VIDEOMP4",f.toString()+ " Zero length");
+                        errMsg.setText("MediaPlayer: zero length "+curVideo);
+                        return;
+                    }
+                    if (vidFiles.get(pos).fvalid.compareTo("null") == 0){
+                        errMsg.setText("MediaPlayer: invalid mp4 "+ curVideo);
+                    }
+                    if (vidFiles.get(pos).fvalid.compareTo("OK") != 0) return;
+
+                    Uri uri = Uri.fromFile(f);
+                    btnSwitch.setVisibility(View.VISIBLE);
+                    vs.showNext();
+                    try {
+                        mVideoView.setOnErrorListener(mOnErrorListener);
+                        mVideoView.setVideoURI(uri);
+                        mVideoView.start();
+                    }
+                    catch (Exception e){
+                        Log.e("VIDEOMP4","ERROR: unable to play "+curVideo);
+                        errMsg.setText("MediaPlayer: unable to play "+curVideo);
+                    }
+                }
+            });
+d229 2
+a230 1
+        pBar.setVisibility(View.GONE);
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d35 1
+d88 2
+a89 1
+        listVideoFiles();
+d91 16
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d29 1
+d40 1
+d53 1
+a53 1
+    int tFiles = 0;
+d98 1
+a98 1
+        tFiles = vFiles.length;
+d135 9
+a143 1
+            fStat.setText("Total mp4: "+tFiles+"    Total OK: "+tOK+"    Total null: "+tNull+"    Total zero length: "+tZero);
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d50 1
+d70 1
+d89 1
+a89 6
+        ProgressBar pb = new ProgressBar(this);
+        pb.setIndeterminate(true);
+        pb.setVisibility(View.VISIBLE);
+        pb.bringToFront();
+
+        //pb.show();
+d187 1
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d152 1
+a152 1
+                        errMsg.append("\nMediaPlayer ERROR: "+curVideo+" not found");
+d157 1
+a157 1
+                        errMsg.append("\nMediaPlayer ERROR: "+curVideo+" not file");
+d162 1
+a162 1
+                        errMsg.append("\nMediaPlayer ERROR: cannot read "+curVideo);
+d167 1
+a167 1
+                        errMsg.append("\nMediaPlayer ERROR: zero length "+curVideo);
+d170 3
+d185 1
+a185 1
+                        errMsg.append("\nMediaPlayer ERROR: unable to play "+curVideo);
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d49 5
+d68 1
+d99 1
+d114 10
+a123 1
+                        hasVideo = (hasVideo == null) ? "null" : (hasVideo.compareTo("yes") == 0) ? "OK" : hasVideo;
+d129 4
+a132 1
+                else hasVideo = "zero";
+d136 1
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 2
+import android.os.Environment;
+import android.media.AudioManager;
+a46 1
+    //AudioManager mAudioManager;
+a67 1
+        //md = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
+a74 1
+        //mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0);
+d81 7
+d94 1
+a94 1
+            String hasVideo;
+d104 8
+a111 3
+                    retriever.setDataSource(fd.fname);
+                    hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
+                    hasVideo = (hasVideo == null) ? "null" : ( hasVideo.compareTo("yes") == 0 ) ? "OK" : hasVideo;
+d133 1
+d138 1
+d143 6
+d150 1
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d29 2
+d124 1
+d128 1
+d132 1
+d145 1
+d203 4
+a214 1
+
+@
+
+
+1.18
+log
+@custom sorting seems to be working
+@
+text
+@d104 2
+a105 2
+                fd.valid = hasVideo;
+                Log.d("VIDEOMP4","onViewFS hasVideo="+fd.valid+" "+ f.toString());
+a106 1
+
+a107 1
+
+a108 1
+
+d149 2
+a150 2
+            int a1 = (int) fld1.valid.charAt(0);
+            int a2 = (int) fld2.valid.charAt(0);
+d174 1
+a174 1
+        public String valid;
+d190 2
+a191 2
+            if (flist.valid.compareTo("OK") != 0) errStr = "<font color='#FF0000'>"+flist.valid+"</font>";
+            else                                  errStr = "<font color='#000000'>"+flist.valid+"</font>";
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d108 1
+a108 4
+
+
+
+
+@
+
+
+1.16
+log
+@valid file shows as OK
+@
+text
+@d37 1
+d107 6
+d114 1
+d152 25
+a197 1
+            //fvalid.setText(errStr);
+d206 1
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d100 1
+a100 1
+                    hasVideo = (hasVideo == null) ? "null" : hasVideo;
+d163 2
+a164 2
+            if (flist.valid.compareTo("yes") != 0) errStr = "<font color='#FF0000'>"+flist.valid+"</font>";
+            else                                   errStr = "<font color='#000000'>"+flist.valid+"</font>";
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d13 2
+d27 1
+d49 2
+d56 2
+d78 1
+a78 1
+        onViewFS();
+d81 1
+a81 1
+    public void onViewFS(){
+d88 2
+d92 13
+a104 5
+                FileListData fl = new FileListData();
+                fl.fname = f.getPath();
+                fl.fsize = f.length();
+                vidFiles.add(fl);
+                Log.d("VIDEOMP4","onViewFS f="+f.toString());
+d145 1
+d147 1
+a147 1
+        public long fsize;
+d157 1
+d162 6
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d44 1
+d54 2
+d96 1
+d154 2
+a155 1
+            Log.d("VIDEOMP4","OnErrorListener.onError "+String.valueOf(what)+":"+String.valueOf(extra)+"  for "+curVideo);
+d163 1
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d18 1
+d42 2
+a43 1
+    AudioManager mAudioManager;
+d50 3
+d57 2
+a58 2
+        md = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
+        //md = new File("/sdcard/oddc");
+d63 4
+a66 21
+        //mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+
+        /*curVideo = "170906_095512.mp4";
+        File f = new File(md,curVideo);
+        if (! f.exists()){
+            Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
+        }
+        if (! f.isFile()){
+            Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
+        }
+        if (! f.canRead()){
+            Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
+        }
+        else {
+            Log.d("VIDEOMP4",f.toString()+ " OK");*/
+
+
+            mVideoView = (VideoView) findViewById(R.id.videoview);
+            MediaController mc = new MediaController(this);
+            //mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0);
+            mVideoView.setMediaController(mc);
+a71 2
+        //File[] vFiles = md.listFiles();
+
+d108 1
+a146 1
+
+d157 1
+a159 1
+
+@
+
+
+1.11
+log
+@FileListAdapter working
+ERROR: unable to play file
+@
+text
+@d17 1
+d52 2
+a53 2
+        //md = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
+        md = new File("/sdcard/oddc");
+d58 1
+a58 1
+        mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+d72 1
+a72 1
+            Log.d("VIDEOMP4",f.toString()+ " OK");
+d77 1
+a77 1
+            mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0);
+d79 1
+a79 1
+        }*/
+d92 1
+a92 1
+            final ArrayList<FileList> vidFiles = new ArrayList<FileList>();
+d94 1
+a94 1
+                FileList fl = new FileList();
+d98 1
+a98 1
+                Log.d("ODDC VIEWFILES","f="+f.toString());
+d108 13
+a120 2
+                    Log.d("VIDEOMP4","ListView "+String.valueOf(pos)+" "+curVideo);
+                    File f = new File(md,curVideo);
+d136 1
+a136 1
+    private class FileList {
+d141 1
+a141 1
+    private class FileListAdapter extends ArrayAdapter<FileList>
+d143 1
+a143 1
+        public FileListAdapter(Context context, ArrayList<FileList> flist) {
+a144 1
+            Log.d("ODDC LogDataAdapter", "LogDataAdapter CONSTRUCTOR");
+d148 1
+a148 1
+            FileList flist = getItem(position);
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d94 1
+a94 1
+                fl.fname = f.getName();
+a144 1
+
+@
+
+
+1.9
+log
+@now using FileFilter
+@
+text
+@d10 3
+d16 2
+a17 1
+import android.widget.MediaController;
+d20 1
+d91 1
+a91 1
+            final ArrayList<String> vidFiles = new ArrayList<String>();
+d93 4
+a96 1
+                vidFiles.add(f.getName());
+d99 1
+a99 1
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.fslistview_layout, vidFiles);
+d106 1
+a106 1
+                    curVideo = vidFiles.get(pos);
+d121 25
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d26 1
+d78 7
+a84 1
+        File[] vFiles = md.listFiles();
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d16 2
+d45 5
+a49 1
+        md = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
+d53 1
+a53 1
+        curVideo = "170906_095512.mp4";
+d72 1
+a72 3
+            //mVideoView.setVideoURI(uri);
+            //mVideoView.start();
+        }
+d92 1
+a92 1
+                    Log.d("VIDEOMP$","ListView "+String.valueOf(pos)+" "+curVideo);
+a94 1
+                    mVideoView.setVideoURI(uri);
+d96 8
+a103 1
+                    mVideoView.start();
+d108 10
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d64 1
+a64 1
+            mVideoView.setVolume(0);
+d100 2
+a101 4
+        if (vs.getCurrentView() == fview){
+            vs.showNext();
+        }
+        else vs.showPrevious();
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d3 2
+d8 1
+a8 1
+
+d30 3
+d45 1
+d47 2
+a48 1
+        File f = new File(md,"170906_095512.mp4");
+d61 7
+a67 5
+            Uri uri = Uri.fromFile(f);
+            VideoView mVideoView = (VideoView) findViewById(R.id.videoview);
+            mVideoView.setMediaController(new MediaController(this));
+            mVideoView.setVideoURI(uri);
+            mVideoView.start();
+d77 1
+a77 1
+                vidFiles.add(f.getPath());
+d87 7
+a93 1
+                    Log.d("VIDEOMP$","ListView "+String.valueOf(pos)+" "+vidFiles.get(pos));
+d100 3
+a102 1
+        if (vs.getCurrentView() == fview) vs.showNext();
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d17 2
+d25 3
+d34 4
+a53 2
+
+
+a54 1
+
+d84 4
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d60 1
+a60 1
+            ArrayList<String> vidFiles = new ArrayList<String>();
+d70 1
+a70 1
+                public void onItemClick(AdapterView<?> adapter, View v, int position, long arg3)
+d72 1
+a72 1
+                    Log.d("VIDEOMP$","ListView "+String.valueOf(position));
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d7 3
+d12 3
+d17 1
+d22 1
+d29 1
+a29 1
+        File md = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
+d54 22
+d77 2
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d5 8
+d20 26
+@
