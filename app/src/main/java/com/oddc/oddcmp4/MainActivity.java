@@ -2,6 +2,8 @@ package com.oddc.oddcmp4;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.PackageInfo;
 import android.Manifest;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -86,9 +88,17 @@ public class MainActivity extends AppCompatActivity {
         mContext = getApplicationContext();
         inputManager = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
 
+        String subT = "MP4 validation tool ";
+        try {
+            PackageInfo pinfo = mContext.getPackageManager().getPackageInfo(mContext.getPackageName(), 0);
+            subT += pinfo.versionName;
+        }
+        catch (NameNotFoundException e){}
+
         android.support.v7.app.ActionBar ab = getSupportActionBar();
         ab.setTitle("ODDC");
-        ab.setSubtitle("MP4 validation tool");
+        ab.setSubtitle(subT);
+
 
         if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQ_READ_EXT_STORAGE);
