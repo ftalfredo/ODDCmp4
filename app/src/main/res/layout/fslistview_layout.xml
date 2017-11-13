@@ -14,10 +14,13 @@
         android:id="@+id/fsize"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:layout_marginRight="20dp"
         android:layout_gravity="center_vertical" />
     <TextView
         android:id="@+id/fname"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical" />
 

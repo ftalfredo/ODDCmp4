@@ -66,10 +66,16 @@ public class MainActivity extends AppCompatActivity {
     final int REQ_READ_EXT_STORAGE = 1001;
     boolean reqGranted = false;
     ArrayList<FileListData> vidFiles;
+    FileListAdapter adapter;
 
     InputMethodManager inputManager;
 
     public static Context mContext;
+
+    public static final int S_VALID = 0;
+    public static final int S_SIZE  = 1;
+    public static final int S_NAME  = 2;
+    int sortMode = S_VALID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         else reqGranted = true;
 
         fsview = (ListView) findViewById(R.id.fslistView);
-
         sview = (SearchView) findViewById(R.id.sview);
         sview.setQueryHint("Search for mp4");
         sview.setIconified(false);
@@ -100,11 +105,29 @@ public class MainActivity extends AppCompatActivity {
 
         sview.setOnQueryTextListener(new OnQueryListener());
 
+        fStat = (TextView)findViewById(R.id.fStat);
+        fStat.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      sortMode = ( sortMode + 1) % 3;
+                      Log.d("ODDCmp4","fStat.onClickkkkkkkkkkkkkkkkkkkkkkkkk sortMode="+sortMode);
+
+                      switch(sortMode){
+                          case S_VALID: vidFiles.sort(new ValidListComparator()); break;
+                          case S_SIZE: vidFiles.sort(new SizeListComparator()); break;
+                          case S_NAME: vidFiles.sort(new NameListComparator()); break;
+                      }
+                      adapter = new FileListAdapter(mContext, vidFiles);
+                      fsview.setAdapter(adapter);
+                  }
+              }
+        );
+
         btnSwitch = (Button)findViewById(R.id.btnSwitch);
         btnSwitch.setVisibility(View.INVISIBLE);
 
         errMsg = (TextView)findViewById(R.id.errMsg);
-        fStat = (TextView)findViewById(R.id.fStat);
+
         pBar = (ProgressBar)findViewById(R.id.pBar);
 
         fview = findViewById(R.id.fslistView);
@@ -191,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadViewList(){
-        FileListAdapter adapter = new FileListAdapter(this, vidFiles);
+        adapter = new FileListAdapter(this, vidFiles);
         fsview.setAdapter(adapter);
         fsview.setOnItemClickListener(new OnItemClickListener(){
             @Override
@@ -205,26 +228,26 @@ public class MainActivity extends AppCompatActivity {
 
                 if (! f.exists()){
                     Log.d("VIDEOMP4",f.toString()+ " !EXISTS");
-                    errMsg.setText("MediaPlayer: "+curVideo+" not found");
+                    errMsg.setText("MediaPlayer: "+f.getName()+" not found");
                     return;
                 }
                 if (! f.isFile()){
                     Log.d("VIDEOMP4",f.toString()+ " !ISFILE");
-                    errMsg.setText("MediaPlayer: "+curVideo+" not file");
+                    errMsg.setText("MediaPlayer: "+f.getName()+" not a file");
                     return;
                 }
                 if (! f.canRead()){
                     Log.d("VIDEOMP4",f.toString()+ " !CANREAD");
-                    errMsg.setText("MediaPlayer: cannot read "+curVideo);
+                    errMsg.setText("MediaPlayer: cannot read "+f.getName());
                     return;
                 }
                 if (f.length() == 0){
                     Log.d("VIDEOMP4",f.toString()+ " Zero length");
-                    errMsg.setText("MediaPlayer: zero length "+curVideo);
+                    errMsg.setText("MediaPlayer: zero length "+f.getName());
                     return;
                 }
                 if (vidFiles.get(pos).fvalid.compareTo("NotValid") == 0){
-                    errMsg.setText("MediaPlayer: NotValid mp4 "+ curVideo);
+                    errMsg.setText("MediaPlayer: NotValid "+ f.getName());
                 }
                 if (vidFiles.get(pos).fvalid.compareTo("Valid") != 0) return;
 
@@ -234,7 +257,8 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     mVideoView.setOnErrorListener(mOnErrorListener);
                     mVideoView.setVideoURI(uri);
-                    errMsg.setText(String.valueOf(curVideoSZ) + "  " + curVideo);
+
+                    errMsg.setText(String.format("%,d  %s",curVideoSZ,curVideo));
                     mVideoView.start();
                 }
                 catch (Exception e){
@@ -247,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private class ListFilesTask extends AsyncTask<Void,Integer,Integer> {
+        String fMaxF; int fMaxSZ = 0;
         @Override
         protected Integer doInBackground(Void... params) {
             int fProg = 0;
@@ -268,6 +293,10 @@ public class MainActivity extends AppCompatActivity {
                     fd.fname = f.getName();
                     fd.fsize = f.length();
                     if (fd.fsize > 0) {
+                        if ( fd.fsize > fMaxSZ ){
+                            fMaxSZ = (int)fd.fsize;
+                            fMaxF = fd.fname;
+                        }
                         try {
                             retriever.setDataSource(fd.fpath);
                             hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
@@ -293,7 +322,8 @@ public class MainActivity extends AppCompatActivity {
                     fd.fvalid = hasVideo;
                     vidFiles.add(fd);
                 }
-                vidFiles.sort(new FileListComparator());
+                vidFiles.sort(new ValidListComparator());
+                //vidFiles.sort(new SizeListComparator());
             }
             return new Integer(tMP4);
         }
@@ -307,17 +337,21 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Integer i) {
             pBar.setVisibility(View.GONE);
             String sMP4 = "Total mp4:";
-            String sOK  = "Total  Valid:";
+            String sOK  = "Total Valid:";
             String sNull = "Total NotValid:";
             String sZero = "Total zero:";
-            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$16s %4$5d \n%5$13s %6$5d %7$16s %8$5d",sMP4,tMP4,sNull,tNull,sOK, tValid,sZero,tZero);
+            String sMax = "Max:";
+            //String sMin = "Min:";
+            //int fmax = 55666777;
+            //int fmin = 0;
+            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$16s %4$5d\n%5$13s %6$5d %7$16s %8$5d\n%9$8s %10$,d  %11$10s",sMP4,tMP4,sNull,tNull, sOK,tValid,sZero,tZero, sMax,fMaxSZ,fMaxF);
             fStat.setTypeface(Typeface.MONOSPACE);
             fStat.setText(sStatus);
             loadViewList();
         }
     }
 
-    private class FileListComparator implements Comparator<FileListData>{
+    private class ValidListComparator implements Comparator<FileListData>{
         @Override
         public int compare(FileListData fld1, FileListData fld2) {
             int a1 = (int) ( fld1.fvalid.charAt(0) | 0x20 );
@@ -338,6 +372,23 @@ public class MainActivity extends AppCompatActivity {
                     return 1;
                 default: return 0;
             }
+        }
+    }
+
+    private class SizeListComparator implements Comparator<FileListData>{
+        @Override
+        public int compare(FileListData fld1, FileListData fld2) {
+            if (fld1.fsize  < fld2.fsize) return -1;
+            if (fld1.fsize == fld2.fsize) return  0;
+            if (fld1.fsize  > fld2.fsize) return  1;
+            return 0;
+        }
+    }
+
+    private class NameListComparator implements Comparator<FileListData>{
+        @Override
+        public int compare(FileListData fld1, FileListData fld2) {
+            return fld1.fname.compareTo(fld2.fname);
         }
     }
 
@@ -365,7 +416,7 @@ public class MainActivity extends AppCompatActivity {
             else                                      errStr = "<font color='#000000'>"+flist.fvalid+"</font>";
             fvalid.setText(Html.fromHtml(errStr,0));
 
-            TextView fsize = (TextView) convertView.findViewById(R.id.fsize); fsize.setText(Integer.toString((int)flist.fsize));
+            TextView fsize = (TextView) convertView.findViewById(R.id.fsize); fsize.setText( String.format("%,d",(int)flist.fsize) );
             TextView fname = (TextView) convertView.findViewById(R.id.fname); fname.setText(flist.fname);
 
             if(position % 2 ==1) convertView.setBackgroundColor(Color.rgb(0xd9, 0xdd, 0xf2));

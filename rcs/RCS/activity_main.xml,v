@@ -1,10 +1,20 @@
-head	1.23;
+head	1.25;
 access;
 symbols;
 locks
-	jalfredo:1.23; strict;
+	jalfredo:1.25; strict;
 comment	@# @;
 
+
+1.25
+date	2017.11.10.21.57.47;	author jalfredo;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2017.11.10.19.58.38;	author jalfredo;	state Exp;
+branches;
+next	1.23;
 
 1.23
 date	2017.11.07.22.02.51;	author jalfredo;	state Exp;
@@ -126,7 +136,7 @@ desc
 @@
 
 
-1.23
+1.25
 log
 @*** empty log message ***
 @
@@ -150,7 +160,7 @@ text
         <TextView
             android:id="@@+id/fStat"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="60dp"
             android:text=""
             android:textSize="14sp"
             android:background="#ffd9ddf2"
@@ -198,7 +208,8 @@ text
             <TextView
                 android:id="@@+id/errMsg"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="9"
                 android:text=""
                 android:textSize="14sp"
                 android:textColor="#ffffffff"
@@ -217,6 +228,28 @@ text
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
+@
+
+
+1.24
+log
+@added MaxFile
+@
+text
+@d68 2
+a69 1
+                android:layout_height="40dp"
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+            android:layout_height="40dp"
 @
 
 
