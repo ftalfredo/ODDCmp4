@@ -2,26 +2,54 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
+    android:layout_height="60dp"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/fvalid"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical" />
-    <TextView
-        android:id="@+id/fsize"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:textAlignment="gravity"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="center_vertical" />
-    <TextView
-        android:id="@+id/fname"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical" />
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/fvalid"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/fsize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.02"
+            android:gravity="left"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/fdur"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAlignment="gravity" />
+        <TextView
+            android:id="@+id/fdim"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:textAlignment="gravity" />
+    </LinearLayout>
 
 </LinearLayout>

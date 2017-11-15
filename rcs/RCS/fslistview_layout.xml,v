@@ -1,10 +1,25 @@
-head	1.4;
+head	1.7;
 access;
 symbols;
 locks
-	jalfredo:1.4; strict;
+	jalfredo:1.7; strict;
 comment	@# @;
 
+
+1.7
+date	2017.11.15.19.21.12;	author jalfredo;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2017.11.15.00.15.46;	author jalfredo;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2017.11.15.00.01.52;	author jalfredo;	state Exp;
+branches;
+next	1.4;
 
 1.4
 date	2017.11.10.18.56.36;	author jalfredo;	state Exp;
@@ -31,7 +46,7 @@ desc
 @@
 
 
-1.4
+1.7
 log
 @*** empty log message ***
 @
@@ -40,9 +55,101 @@ text
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@@+id/fvalid"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@@+id/fsize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@@+id/fname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.02"
+            android:gravity="left"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@@+id/fdur"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAlignment="gravity" />
+        <TextView
+            android:id="@@+id/fdim"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+</LinearLayout>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d42 1
+a42 1
+            android:layout_width="100dp"
+a43 1
+            android:layout_marginLeft="60dp"
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+    android:layout_height="100dp"
+d10 1
+a10 1
+        android:layout_height="50dp"
+d38 1
+a38 1
+        android:layout_height="50dp"
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d5 2
+a6 2
     android:layout_height="50dp"
     android:orientation="horizontal">
-
+d8 1
+a8 15
     <TextView
         android:id="@@+id/fvalid"
         android:layout_width="60dp"
@@ -58,11 +165,10 @@ text
         android:layout_gravity="center_vertical" />
     <TextView
         android:id="@@+id/fname"
-        android:layout_width="match_parent"
+d10 45
+a54 2
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical" />
-
-</LinearLayout>
 @
 
 

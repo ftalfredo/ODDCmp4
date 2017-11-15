@@ -41,6 +41,7 @@ import android.util.Log;
 import android.widget.ViewSwitcher;
 
 import android.os.AsyncTask;
+import android.os.PersistableBundle;
 import java.util.ArrayList;
 
 import java.io.File;
@@ -61,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
     TextView errMsg;
     TextView fStat;
     ProgressBar pBar;
-    int tMP4 = 0;
+    int nMP4 = 0;
+    long zMP4 = 0;
     int tValid = 0;
     int tNull = 0;
     int tZero = 0;
@@ -120,8 +122,6 @@ public class MainActivity extends AppCompatActivity {
                   @Override
                   public void onClick(View view) {
                       sortMode = ( sortMode + 1) % 3;
-                      Log.d("ODDCmp4","fStat.onClickkkkkkkkkkkkkkkkkkkkkkkkk sortMode="+sortMode);
-
                       switch(sortMode){
                           case S_VALID: vidFiles.sort(new ValidListComparator()); break;
                           case S_SIZE: vidFiles.sort(new SizeListComparator()); break;
@@ -251,14 +251,7 @@ public class MainActivity extends AppCompatActivity {
                     errMsg.setText("MediaPlayer: cannot read "+f.getName());
                     return;
                 }
-                if (f.length() == 0){
-                    Log.d("VIDEOMP4",f.toString()+ " Zero length");
-                    errMsg.setText("MediaPlayer: zero length "+f.getName());
-                    return;
-                }
-                if (vidFiles.get(pos).fvalid.compareTo("NotValid") == 0){
-                    errMsg.setText("MediaPlayer: NotValid "+ f.getName());
-                }
+
                 if (vidFiles.get(pos).fvalid.compareTo("Valid") != 0) return;
 
                 Uri uri = Uri.fromFile(f);
@@ -284,24 +277,33 @@ public class MainActivity extends AppCompatActivity {
         String fMaxF; int fMaxSZ = 0;
         @Override
         protected Integer doInBackground(Void... params) {
-            int fProg = 0;
+            int nProg = 0;
             File[] vFiles = md.listFiles(new FileFilter() {
                 public boolean accept(File fname) {
                     return fname.getPath().endsWith(".mp4");
                 }
             });
             if (vFiles != null) {
-                tMP4 = vFiles.length;
+                nMP4 = vFiles.length;
                 String hasVideo = "NA";
+                String dur = "NA"; int vdur = 0;
+                String sdur = "NA";
+                String dim = "NA";
+                String vw = "NA";
+                String vh = "NA";
+                String sbps = "NA"; int kbps = 0;
+                String sfr  = "NA"; int fr = 0;
+
                 MediaMetadataRetriever retriever = new MediaMetadataRetriever();
                 vidFiles = new ArrayList<FileListData>();
                 for (File f : vFiles) {
-                    fProg++;
-                    publishProgress(fProg);
+                    nProg++;
+                    publishProgress(nProg);
                     FileListData fd = new FileListData();
                     fd.fpath = f.getPath();
                     fd.fname = f.getName();
                     fd.fsize = f.length();
+                    zMP4 += fd.fsize;
                     if (fd.fsize > 0) {
                         if ( fd.fsize > fMaxSZ ){
                             fMaxSZ = (int)fd.fsize;
@@ -310,6 +312,27 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             retriever.setDataSource(fd.fpath);
                             hasVideo = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_VIDEO);
+                            dur = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
+                            sbps = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_BITRATE);
+                            //sfr = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_CAPTURE_FRAMERATE);
+                            if (dur != null){
+                                vdur = (Integer.parseInt(dur))/1000;
+                                long h = vdur / 3600;
+                                long m = (vdur - h * 3600) / 60;
+                                long s = vdur - (h * 3600 + m * 60);
+                                sdur = String.format(Locale.US,"%1$02d:%2$02d:%3$02d",h,m,s);
+                            }
+                            vw = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH);
+                            vh = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT);
+                            if (sbps != null){
+                                kbps = (Integer.parseInt(sbps))/1000;
+                                dim =  kbps + "kbps " +  vw + "x" + vh;
+                            }
+                            else {
+                                dim =  "nullkbps " +  vw + "x" + vh;
+                            }
+                            fd.fdur = sdur;
+                            fd.fdim = dim;
                             if (hasVideo == null){
                                 hasVideo = "NotValid";
                                 tNull++;
@@ -335,7 +358,7 @@ public class MainActivity extends AppCompatActivity {
                 vidFiles.sort(new ValidListComparator());
                 //vidFiles.sort(new SizeListComparator());
             }
-            return new Integer(tMP4);
+            return new Integer(nMP4);
         }
 
         @Override
@@ -347,14 +370,12 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Integer i) {
             pBar.setVisibility(View.GONE);
             String sMP4 = "Total mp4:";
-            String sOK  = "Total Valid:";
-            String sNull = "Total NotValid:";
-            String sZero = "Total zero:";
-            String sMax = "Max:";
-            //String sMin = "Min:";
-            //int fmax = 55666777;
-            //int fmin = 0;
-            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$16s %4$5d\n%5$13s %6$5d %7$16s %8$5d\n%9$8s %10$,d  %11$10s",sMP4,tMP4,sNull,tNull, sOK,tValid,sZero,tZero, sMax,fMaxSZ,fMaxF);
+            String sValid  = "Total Valid:";
+            String sNValid = "Total NotValid:";
+            int tNValid = tNull + tZero;
+            float fMP4 = (float)(zMP4 / (1024 * 1024) );
+            String sStatus = String.format(Locale.US,"%1$13s %2$5d %3$,12.1f MB\n%4$13s %5$5d %6$16s %7$5d",
+                    sMP4,nMP4,fMP4,  sValid,tValid, sNValid, tNValid);
             fStat.setTypeface(Typeface.MONOSPACE);
             fStat.setText(sStatus);
             loadViewList();
@@ -407,6 +428,8 @@ public class MainActivity extends AppCompatActivity {
         public String fpath;
         public String fname;
         public String fvalid;
+        public String fdur;
+        public String fdim;
     }
 
     private class FileListAdapter extends ArrayAdapter<FileListData>
@@ -431,6 +454,9 @@ public class MainActivity extends AppCompatActivity {
 
             if(position % 2 ==1) convertView.setBackgroundColor(Color.rgb(0xd9, 0xdd, 0xf2));
             else                 convertView.setBackgroundColor(Color.rgb(0xec, 0xee, 0xf8));
+
+            TextView fdur = (TextView) convertView.findViewById(R.id.fdur); fdur.setText(flist.fdur);
+            TextView fdim = (TextView) convertView.findViewById(R.id.fdim); fdim.setText(flist.fdim);
 
             return convertView;
         }
