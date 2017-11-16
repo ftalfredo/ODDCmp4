@@ -4,19 +4,22 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.PackageInfo;
+
 import android.Manifest;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
+
 import android.os.Bundle;
+import android.os.AsyncTask;
+
+import android.text.Html;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
 import android.view.inputmethod.InputMethodManager;
-
-import android.text.Html;
 
 import android.widget.ProgressBar;
 import android.widget.AdapterView;
@@ -40,14 +43,11 @@ import android.net.Uri;
 import android.util.Log;
 import android.widget.ViewSwitcher;
 
-import android.os.AsyncTask;
-import android.os.PersistableBundle;
-import java.util.ArrayList;
-
 import java.io.File;
 import java.io.FileFilter;
-import java.util.Comparator;
 import java.util.Locale;
+import java.util.Comparator;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     File md;
@@ -147,10 +147,20 @@ public class MainActivity extends AppCompatActivity {
         md = new File("/sdcard/oddc");
 
         mVideoView = (VideoView) findViewById(R.id.videoview);
-        MediaController mc = new MediaController(this);
-        mc.setAnchorView(mVideoView);
-        mc.setPadding(0,0,0,0);
-        mVideoView.setMediaController(mc);
+        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setOnVideoSizeChangedListener(new MediaPlayer.OnVideoSizeChangedListener() {
+                    @Override
+                    public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
+                        Log.d("VIDEOMP4","onVideoSizeChangedddddddddddddddddddddd BoM W="+width+" H="+height);
+                        MediaController mc = new MediaController(MainActivity.this);
+                        mVideoView.setMediaController(mc);
+                        mc.setAnchorView(mVideoView);
+                    }
+                });
+            }
+        });
 
         if (reqGranted) new ListFilesTask().execute();
 
@@ -233,7 +243,6 @@ public class MainActivity extends AppCompatActivity {
                 errMsg.setText("");
                 curVideo = vidFiles.get(pos).fpath;
                 int curVideoSZ = (int)vidFiles.get(pos).fsize;
-                Log.d("VIDEOMP4","loadViewList CLICK "+String.valueOf(pos)+" "+curVideo);
                 File f = new File(curVideo);
 
                 if (! f.exists()){
@@ -260,7 +269,6 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     mVideoView.setOnErrorListener(mOnErrorListener);
                     mVideoView.setVideoURI(uri);
-
                     errMsg.setText(String.format("%,d  %s",curVideoSZ,curVideo));
                     mVideoView.start();
                 }
@@ -326,10 +334,10 @@ public class MainActivity extends AppCompatActivity {
                             vh = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT);
                             if (sbps != null){
                                 kbps = (Integer.parseInt(sbps))/1000;
-                                dim =  kbps + "kbps " +  vw + "x" + vh;
+                                dim =  kbps + "kbps  " +  vw + "x" + vh;
                             }
                             else {
-                                dim =  "nullkbps " +  vw + "x" + vh;
+                                dim =  "nullkbps  " +  vw + "x" + vh;
                             }
                             fd.fdur = sdur;
                             fd.fdim = dim;
